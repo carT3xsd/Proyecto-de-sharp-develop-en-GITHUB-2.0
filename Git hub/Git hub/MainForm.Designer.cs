@@ -45,6 +45,7 @@ namespace Git_hub
 			this.btnMultiplicar = new System.Windows.Forms.Button();
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.lblResultado = new System.Windows.Forms.Label();
+			this.btnResiduo = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -124,11 +125,22 @@ namespace Git_hub
 			this.lblResultado.Size = new System.Drawing.Size(164, 53);
 			this.lblResultado.TabIndex = 9;
 			// 
+			// btnResiduo
+			// 
+			this.btnResiduo.Location = new System.Drawing.Point(241, 119);
+			this.btnResiduo.Name = "btnResiduo";
+			this.btnResiduo.Size = new System.Drawing.Size(94, 37);
+			this.btnResiduo.TabIndex = 10;
+			this.btnResiduo.Text = "Residuo";
+			this.btnResiduo.UseVisualStyleBackColor = true;
+			this.btnResiduo.Click += new System.EventHandler(this.BtnResiduoClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(485, 221);
+			this.ClientSize = new System.Drawing.Size(485, 256);
+			this.Controls.Add(this.btnResiduo);
 			this.Controls.Add(this.lblResultado);
 			this.Controls.Add(this.btnDividir);
 			this.Controls.Add(this.btnMultiplicar);
@@ -143,6 +155,7 @@ namespace Git_hub
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnResiduo;
 		private System.Windows.Forms.Label lblResultado;
 		private System.Windows.Forms.Button btnDividir;
 		private System.Windows.Forms.Button btnMultiplicar;

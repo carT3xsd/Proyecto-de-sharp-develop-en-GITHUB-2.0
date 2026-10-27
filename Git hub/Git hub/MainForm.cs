@@ -61,5 +61,13 @@ namespace Git_hub
 		    double resultado = Num1 / Num2;
 		    lblResultado.Text = "Resultado: " + resultado.ToString();
 		}
+		
+		void BtnResiduoClick(object sender, EventArgs e)
+		{
+			double Num1 = Convert.ToDouble(txtNum1.Text);
+			double Num2 = Convert.ToDouble(txtNum2.Text);
+			double resultado = Num1 % Num2;
+			labelResultado.Text = "Módulo: " + resultado.ToString();
+		}
 	}
 }

@@ -67,7 +67,14 @@ namespace Git_hub
 			double Num1 = Convert.ToDouble(txtNum1.Text);
 			double Num2 = Convert.ToDouble(txtNum2.Text);
 			double resultado = Num1 % Num2;
-			labelResultado.Text = "Módulo: " + resultado.ToString();
+			lblResultado.Text = "Módulo: " + resultado.ToString();
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			Form1 f =  new Form1();
+			f.Show();
+			this.Hide();
 		}
 	}
 }
